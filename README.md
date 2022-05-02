@@ -1,6 +1,17 @@
-### Submission Dicoding Pemograman Web Dasar
+### `Submission Dicoding Pemograman Web Dasar`
 
 Unduh repository jika cocok dijadikan refrensi tugas submission anda.
 
-#### Status
-Approved 17-Apr-2021 20:39:38
+#### `Status`
+
+On going ---
+
+#### `Kreator`
+
+Putu Rades Pratama (https://github.com/radespratama)
+
+```
+Disclaimer : 
+
+Projek hasil karya sendiri dengan referensi desain dari dribbble, envato dan situs desain lainnya!
+````

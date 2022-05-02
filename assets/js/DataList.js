@@ -24,7 +24,7 @@ const dataArticle = [
   const imageContent = document.createElement("img");
   const figureCaption = document.createElement("figcaption");
 
-  columnFour.className = "col-4 flex items-center justify-start bg";
+  columnFour.className = "col-4 flex items-center justify-start";
 
   subArticleLink.href = "/#";
   subArticleLink.className = "no-underline hover:underline";

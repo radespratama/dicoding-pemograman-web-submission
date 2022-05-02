@@ -62,4 +62,12 @@ const dataNewsCategories = [
   { id: 14, name: "Marketplafe" },
   { id: 15, name: "Trading Tools" },
   { id: 16, name: "Security Tools" },
-];
+].map((l) => {
+  const ACategories = document.createElement("a");
+  ACategories.className =
+    "categories-one text-dark no-underline text-left link";
+  ACategories.href = "/#";
+  ACategories.innerText = l.name;
+
+  document.getElementById("categories").append(ACategories)
+});

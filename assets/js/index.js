@@ -20,3 +20,5 @@ window.onscroll = () => {
     navigationBar.classList.remove("shadow-sm");
   }
 };
+
+document.getElementById("year").append(new Date().getFullYear());

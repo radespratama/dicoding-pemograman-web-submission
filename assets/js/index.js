@@ -1,3 +1,4 @@
+const navigationBar = document.getElementById("header-nav");
 const navbarMenu = document.getElementById("nav-menus");
 const buttonHidden = document.getElementById("nav-hidden");
 const buttonShow = document.getElementById("nav-show");
@@ -12,10 +13,10 @@ buttonHidden.addEventListener("click", () => {
   navbarMenu.classList.remove("right-0");
 });
 
-// window.onscroll = () => {
-//   if (window.scrollY > 30) {
-//     navigationBar.classList.add("shadow-sm");
-//   } else {
-//     navigationBar.classList.remove("shadow-sm");
-//   }
-// };
+window.onscroll = () => {
+  if (window.scrollY > 30) {
+    navigationBar.classList.add("shadow-sm");
+  } else {
+    navigationBar.classList.remove("shadow-sm");
+  }
+};

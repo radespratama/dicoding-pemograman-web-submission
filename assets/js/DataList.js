@@ -1,21 +1,49 @@
-const dataNewsVideo = [
+const dataArticle = [
   {
     id: 1,
-    imageUrl: "../images/",
-    name: "South Korean Taxman to Be Granted Right to Search Crypto",
+    imageUrl: "assets/images/sub-hero-article-1.jpg",
+    name: "Crypto in Chaos, but Blockchain-powered Pay and Stablecoins",
+    className: "img-responsive rounded mr-20",
   },
   {
     id: 2,
-    imageUrl: "../images/",
-    name: "Bitcoin Wallets: On-Chain vs Lightning Explained",
+    imageUrl: "assets/images/sub-hero-article-2.jpg",
+    name: "Dogecoin 2.0 Revealed: Revelations From A Big, Anonymous Investor",
+    className: "img-responsive rounded mr-20",
   },
   {
     id: 3,
-    imageUrl: "../images/",
-    name: "Millionaire Bill Pulte is Giving Away Bitcoin to Help People in",
+    imageUrl: "assets/images/sub-hero-article-1.jpg",
+    name: "What Are Salvadorans Doing with their USD 30 Bitcoin Giveaways?",
+    className: "img-responsive rounded mr-20",
   },
-  { id: 4, imageUrl: "../images/", name: "Bitcoin vs Ethereum" },
-];
+].map((b) => {
+  const columnFour = document.createElement("div");
+  const subArticleLink = document.createElement("a");
+  const figureTag = document.createElement("figure");
+  const imageContent = document.createElement("img");
+  const figureCaption = document.createElement("figcaption");
+
+  columnFour.className = "col-4 flex items-center justify-start bg";
+
+  subArticleLink.href = "/#";
+  subArticleLink.className = "no-underline hover:underline";
+
+  figureTag.className = "flex items-center";
+
+  imageContent.src = b.imageUrl;
+  imageContent.className = b.className;
+  imageContent.alt = "Content Article";
+
+  figureCaption.className = "text-white text-left w-240";
+  figureCaption.innerText = b.name;
+
+  figureTag.append(imageContent, figureCaption);
+  subArticleLink.appendChild(figureTag);
+  columnFour.appendChild(subArticleLink);
+
+  document.getElementById("sub-content").append(columnFour);
+});
 
 const dataNewsCategories = [
   { id: 1, name: "Bicoin News" },
@@ -35,23 +63,3 @@ const dataNewsCategories = [
   { id: 15, name: "Trading Tools" },
   { id: 16, name: "Security Tools" },
 ];
-
-const dataArticle = [
-  {
-    id: 1,
-    imageUrl: "../images/",
-    name: "Institutions Turning from Bitcoin to Ethereum Futures",
-  },
-  {
-    id: 2,
-    imageUrl: "../images/",
-    name: "Crypto Listing and Delisting Announcements: Week 39",
-  },
-  {
-    id: 3,
-    imageUrl: "../images/",
-    name: "Altcoin Traders Get a New Darling as Bitclout Creatorn",
-  },
-];
-
-export { dataNewsVideo, dataNewsCategories };

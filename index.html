@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="assets/css/index.css" />
   </head>
   <body>
-    <header class="header-sdkn">
+    <header class="header-sdkn" id="header-nav">
       <nav class="nav-container">
         <div class="col-8 md:col-7 flex items-center">
           <img
@@ -73,9 +73,52 @@
         </div>
       </nav>
     </header>
-
     <main>
-      <article></article>
+      <article class="bg-dark">
+        <h1 class="max-w-7xl mx-auto title-dkgn text-white">Today trending</h1>
+        <section class="container">
+          <div class="content-wrapper">
+            <div class="col-6 flex-column flex items-center">
+              <a class="no-underline hover:underline viral-content" href="/#">
+                <figure>
+                  <img
+                    src="./assets/images/hero-article-1.jpg"
+                    class="img-responsive rounded shadow-sm"
+                    alt="Content Article"
+                  />
+                  <figcaption class="text-white">
+                    Crypto Market Dives as China Continues Crackdown, Singles
+                    out Tether & Foreign Platforms
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+            <div class="col-6 flex-column flex items-center">
+              <a class="no-underline hover:underline viral-content" href="/#">
+                <figure>
+                  <img
+                    src="./assets/images/hero-article-2.jpg"
+                    class="img-responsive rounded shadow-sm"
+                    alt="Content Article"
+                  />
+                  <figcaption class="text-white">
+                    Last-gasp Negotiations Fail as All But 4 S Korean Crypto
+                    Exchanges Frozen out of Fiat Markets
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div class="sub-content-wrapper mt-32" id="sub-content"></div>
+        </section>
+      </article>
+
+      <article class="bg-white">
+        <h1 class="max-w-7xl mx-auto title-dkgn text-dark">Recommended for you</h1>
+        <section class="container">
+
+        </section>
+      </article>
     </main>
     <footer></footer>
 
@@ -84,5 +127,6 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
     ></script>
     <script src="assets/js/index.js"></script>
+    <script src="assets/js/DataList.js"></script>
   </body>
 </html>

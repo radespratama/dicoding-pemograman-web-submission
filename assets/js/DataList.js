@@ -3,19 +3,19 @@ const dataArticle = [
     id: 1,
     imageUrl: "assets/images/sub-hero-article-1.jpg",
     name: "Crypto in Chaos, but Blockchain-powered Pay and Stablecoins",
-    className: "img-responsive rounded mr-20",
+    className: "img-responsive rounded mr-20 my-15",
   },
   {
     id: 2,
     imageUrl: "assets/images/sub-hero-article-2.jpg",
     name: "Dogecoin 2.0 Revealed: Revelations From A Big, Anonymous Investor",
-    className: "img-responsive rounded mr-20",
+    className: "img-responsive rounded mr-20 my-15",
   },
   {
     id: 3,
     imageUrl: "assets/images/sub-hero-article-1.jpg",
     name: "What Are Salvadorans Doing with their USD 30 Bitcoin Giveaways?",
-    className: "img-responsive rounded mr-20",
+    className: "img-responsive rounded mr-20 my-15",
   },
 ].map((b) => {
   const columnFour = document.createElement("div");

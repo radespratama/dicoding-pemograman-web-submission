@@ -184,6 +184,24 @@ figcaption {
 }
 /* RECOMENDED */
 /* OTHER ARTICLE */
+.profile {
+  margin: 20px 0;
+}
+.img-responsive-profile {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.profile-content h4 {
+  font-size: var(--m);
+  color: var(--global-background-dark);
+  letter-spacing: -1px;
+}
+.profile-content p {
+  font-size: var(--xxs);
+  color: var(--font-color-desc);
+  /* letter-spacing: -1px; */
+}
 .sub-title-djkd {
   font-size: var(--lx);
   letter-spacing: -2px;
@@ -257,6 +275,9 @@ figcaption {
 }
 .mr-20 {
   margin-right: 20px;
+}
+.mr-10 {
+  margin-right: 10px;
 }
 .mt-32 {
   margin-top: 2rem;

@@ -1,6 +1,6 @@
 ### `Submission Dicoding Pemograman Web Dasar`
 
-Unduh repository jika cocok dijadikan refrensi tugas submission anda.
+Unduh repository jika cocok dijadikan referensi tugas submission anda.
 
 #### `Status`
 

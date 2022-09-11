@@ -22,3 +22,4 @@ window.onscroll = () => {
 };
 
 document.getElementById("year").append(new Date().getFullYear());
+

@@ -49,7 +49,7 @@
         <div class="s-content-three">
           <div class="s-input-control">
             <i class="bi bi-search"></i>
-            <input placeholder="Search" />
+            <input class="src" placeholder="Search" />
           </div>
         </div>
       </nav>
@@ -58,7 +58,7 @@
     <main>
       <article class="s-hero">
         <div class="s-hero-content-1">
-          <img src="./assets/images/hero-image.png" alt="" />
+          <img loading="lazy" src="./assets/images/hero-image.png" alt="" />
         </div>
         <a href class="s-hero-content-2">
           <span>UI Design • July 2, 2022</span>
@@ -73,7 +73,7 @@
           </p>
 
           <div class="s-profile-avatar">
-            <img src="./assets/images/person-1.png" alt="" />
+            <img loading="lazy" src="./assets/images/person-1.png" alt="" />
             <div>
               <h6>Leslie Alexander</h6>
               <p>UI Designer</p>
@@ -84,7 +84,7 @@
 
       <article class="s-list-container">
         <a href="/#" class="s-list-item">
-          <img src="./assets/images/thumbnail-1.png" />
+          <img loading="lazy" src="./assets/images/thumbnail-1.png" />
           <span>INTERNET • June 28 2022</span>
           <h2>How to design a product that can grow itself 10x in year</h2>
           <p>
@@ -93,7 +93,7 @@
             dolor.
           </p>
           <div class="s-profile-item">
-            <img src="./assets/images/person-1.png" alt="" />
+            <img loading="lazy" src="./assets/images/person-1.png" alt="" />
             <div>
               <h6>Leslie Alexander</h6>
               <p>UI Designer</p>
@@ -101,7 +101,7 @@
           </div>
         </a>
         <a href="/#" class="s-list-item">
-          <img src="./assets/images/thumbnail-2.png" />
+          <img loading="lazy" src="./assets/images/thumbnail-2.png" />
           <span>9 TO 5 • June 22 2022</span>
           <h2>The More Important the Work, the More Important the Rest</h2>
           <p>
@@ -110,7 +110,7 @@
             product may be viewed as having high.
           </p>
           <div class="s-profile-item">
-            <img src="./assets/images/person-2.png" alt="" />
+            <img loading="lazy" src="./assets/images/person-2.png" alt="" />
             <div>
               <h6>Jenny Wilson</h6>
               <p>Product Designer</p>
@@ -118,7 +118,7 @@
           </div>
         </a>
         <a href="/#" class="s-list-item">
-          <img src="./assets/images/thumbnail-3.png" />
+          <img loading="lazy" src="./assets/images/thumbnail-3.png" />
           <span>INSPIRATIONS • June 18 2022</span>
           <h2>Email Love - Email Inspiration, Templates and Discovery</h2>
           <p>
@@ -126,7 +126,7 @@
             to have had a cause and is contingent upon something else.
           </p>
           <div class="s-profile-item">
-            <img src="./assets/images/person-3.png" alt="" />
+            <img loading="lazy" src="./assets/images/person-3.png" alt="" />
             <div>
               <h6>Esther Howard</h6>
               <p>Entrepreneur</p>
@@ -134,9 +134,10 @@
           </div>
         </a>
       </article>
+
       <article class="s-list-container">
         <a href="/#" class="s-list-item">
-          <img src="./assets/images/thumbnail-4.png" />
+          <img loading="lazy" src="./assets/images/thumbnail-4.png" />
           <span>Crypto • June 07 2022</span>
           <h2>
             The Most Expensive Transaction on Ethereum Cost USD 23.5 Million
@@ -146,7 +147,7 @@
             transaction fee ever to be paid in crypto.
           </p>
           <div class="s-profile-item">
-            <img src="./assets/images/person-4.png" alt="" />
+            <img loading="lazy" src="./assets/images/person-4.png" alt="" />
             <div>
               <h6>Jax Herman</h6>
               <p>Frontend Developer</p>
@@ -154,7 +155,7 @@
           </div>
         </a>
         <a href="/#" class="s-list-item">
-          <img src="./assets/images/thumbnail-5.png" />
+          <img loading="lazy" src="./assets/images/thumbnail-5.png" />
           <span>Crypto • May 27 2022</span>
           <h2>
             Bitcoin Miners Secure More Nuclear Deals Amid Climate Concerns
@@ -165,7 +166,7 @@
             struggling.
           </p>
           <div class="s-profile-item">
-            <img src="./assets/images/person-1.png" alt="" />
+            <img loading="lazy" src="./assets/images/person-1.png" alt="" />
             <div>
               <h6>Abigail Joseph</h6>
               <p>Frontend Developer</p>
@@ -173,7 +174,7 @@
           </div>
         </a>
         <a href="/#" class="s-list-item">
-          <img src="./assets/images/thumbnail-6.png" />
+          <img loading="lazy" src="./assets/images/thumbnail-6.png" />
           <span>Crypto • May 26 2022</span>
           <h2>South Korean Taxman to Be Granted Right to</h2>
           <p>
@@ -182,7 +183,7 @@
             traders.
           </p>
           <div class="s-profile-item">
-            <img src="./assets/images/person-4.png" alt="" />
+            <img loading="lazy" src="./assets/images/person-4.png" alt="" />
             <div>
               <h6>Kevin Yolo</h6>
               <p>Backend Developer</p>
@@ -190,12 +191,23 @@
           </div>
         </a>
       </article>
-      <div class="s-subscribe">
-        <article class="s-subscribe-email">
-          
-        </article>
-        <aside class="s-profile-author">s</aside>
-      </div>
+
+      <article class="s-subscribe-email">
+        <p>Subscribe Us</p>
+        <h2>Subscribe us to get the latest info about News up to date</h2>
+        <p class="s-description">
+          We recommend you subscribe and enter your email address to get daily
+          updates from us.
+        </p>
+        <div class="s-input-control-subs">
+          <input
+            class="s-input"
+            type="text"
+            placeholder="Enter your email address"
+          />
+          <button>Subsribe</button>
+        </div>
+      </article>
     </main>
     <footer class="s-footer">
       <p>© <span id="year"></span> Epictetus Submission Dicoding</p>

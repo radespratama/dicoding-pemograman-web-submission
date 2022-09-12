@@ -145,7 +145,7 @@ header {
   color: var(--color-desc);
 }
 
-input {
+input.src {
   display: none;
 }
 
@@ -296,18 +296,59 @@ main {
   width: 50px;
 }
 
-.s-subscribe {
+.s-subscribe-email {
+  flex-basis: var(--col-12);
   max-width: var(--max-width);
   margin: 4rem auto;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  text-align: center;
 }
 
-.s-subscribe-email,
-.s-profile-author {
-  flex-basis: var(--col-12);
-  background-color: #282c35;
+.s-subscribe-email > p:nth-child(1) {
+  font-size: 18px;
+  color: #ababab;
+}
+
+.s-subscribe-email h2 {
+  font-size: 32px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.s-description {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.s-input-control-subs {
+  background-color: #374151;
+  max-width: 380px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+
+.s-input {
+  padding: 10px;
+  width: 100%;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: var(--color-white);
+}
+
+.s-input-control-subs button {
+  background: #1f1f1f;
+  border: none;
+  padding: 0 10px;
+  border-radius: 8px;
+  color: var(--color-white);
+  cursor: pointer;
 }
 
 .s-footer {
@@ -368,7 +409,7 @@ main {
     display: none;
   }
 
-  input {
+  input.src {
     display: block;
     background: transparent;
     border: none;
@@ -407,16 +448,6 @@ main {
 
   .s-subscribe {
     flex-direction: row;
-  }
-
-  .s-subscribe-email {
-    flex-basis: var(--col-9);
-    background-color: #282c35;
-  }
-
-  .s-profile-author {
-    flex-basis: var(--col-3);
-    background-color: #282c35;
   }
 }
 

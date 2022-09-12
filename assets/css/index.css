@@ -296,6 +296,77 @@ main {
   width: 50px;
 }
 
+.s-recommended {
+  max-width: var(--max-width);
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 0.5rem;
+}
+
+.s-news-list {
+  margin: 10px 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.s-news-item {
+  padding: 10px;
+}
+
+.s-news-item h3:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.s-news-item p {
+  color: #ababab;
+  padding-top: 5px;
+}
+
+.s-news-item,
+.s-recommend-list,
+.s-author {
+  flex-basis: var(--col-12);
+}
+
+.s-author {
+  background-color: #111;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 10px 10px 0 0 #374151;
+  border: 4px solid #374151;
+  max-height: 200px;
+}
+
+.s-author img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.s-author h3 {
+  font-size: 20px;
+  color: #fff;
+}
+
+.s-author p {
+  font-size: 16px;
+  color: var(--color-desc);
+}
+
+.s-recommend-list h2 {
+  font-size: 30px;
+}
+
 .s-subscribe-email {
   flex-basis: var(--col-12);
   max-width: var(--max-width);
@@ -422,13 +493,10 @@ main {
     display: none;
   }
 
-  .s-hero {
-    flex-direction: row;
-  }
-
   .s-hero-content-1 {
     flex-basis: var(--col-8);
   }
+
   .s-hero-content-2 {
     flex-basis: var(--col-4);
   }
@@ -437,17 +505,40 @@ main {
     padding: 15px 0;
   }
 
+  .s-news-item {
+    flex-basis: var(--col-6);
+  }
+
   .s-list-container {
     display: flex;
     flex-direction: row;
   }
 
-  .s-list-item {
-    flex-basis: var(--col-4);
+  .s-hero,
+  .s-news-list,
+  .s-subscribe,
+  .s-recommended {
+    flex-direction: row;
   }
 
-  .s-subscribe {
-    flex-direction: row;
+  .s-recommend-list {
+    flex-basis: var(--col-9);
+  }
+
+  .s-author h3 {
+    font-size: 24px;
+  }
+
+  .s-author p {
+    font-size: 18px;
+  }
+
+  .s-author {
+    flex-basis: var(--col-3);
+  }
+
+  .s-list-item {
+    flex-basis: var(--col-4);
   }
 }
 
